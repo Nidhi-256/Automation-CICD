@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <listeners>
+        <listener class-name="Seleauto.TestComponents.Listeners"/>
+    </listeners>
+   <!-- <groups>
+        <run>
+            <include name="ErrorHandling"/>
+        </run>
+    </groups> -->
+    <test thread-count="5" name="Submit Order Test">
+    <classes>
+        <class name="Seleauto.tests.SubmitOrder"/>
+    </classes>
+    </test>
+
+    <test thread-count="5" name="Error Validation Test">
+        <classes>
+            <class name="Seleauto.tests.ErrorValidationsTest"/>
+        </classes>
+    </test>
+</suite>
